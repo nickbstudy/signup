@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "left right";
+}
+
+#left {
+    grid-area: left;
+    background-image: url("side.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    grid-template-rows: 2fr 1fr 5fr;
+    grid-template-areas: "top mid bot";
+
+}
+
+#right {
+    grid-area: right;
+    background-color: rgb(220, 214, 255);
+    height: 100vh
+}
